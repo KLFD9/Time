@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171531;
+  color: #ffffff;
+  font-size: 35em;
+  font-family: Montserrat;
+  height: 100vh;
+}
+
+#horloge {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#heure {
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    -107.6deg,
+    rgba(79, 148, 243, 0.73) 11.2%,
+    rgba(140, 105, 193, 0.87) 75.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#minute {
+  margin-top: -0.4em;
+  background: -webkit-linear-gradient(
+    77.6deg,
+    rgba(79, 148, 243, 0.73) 11.2%,
+    rgba(140, 105, 193, 0.87) 65.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 35em;
+  }
+}
+
+@media screen and (max-height: 955px) {
+  body {
+    font-size: 28em;
+  }
+}
